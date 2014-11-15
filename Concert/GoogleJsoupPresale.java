@@ -9,6 +9,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
  
+ 
+ //to run use java FunnyCrawler artist name
 public class FunnyCrawler {
  
   private static Pattern patternDomainName;
@@ -19,7 +21,8 @@ public class FunnyCrawler {
 	patternDomainName = Pattern.compile(DOMAIN_NAME_PATTERN);
   }
  
-  public static void main(String[] args, String artist_name) {
+  public static void main(String[] args) {
+	String artist_name=args[args.length()];//artist name should be at the end of sting [] args
 	String search=artist_name+" live nation";//artist name is a string passed in with the artist name
 	FunnyCrawler obj = new FunnyCrawler();
 	Set<String> result = obj.getDataFromGoogle(search);//searching google artist name+ +live nation
