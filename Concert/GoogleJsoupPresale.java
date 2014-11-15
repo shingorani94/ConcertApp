@@ -1,4 +1,3 @@
-package com.mkyong;
  
 import java.io.IOException;
 import java.util.HashSet;
