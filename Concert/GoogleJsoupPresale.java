@@ -23,7 +23,7 @@ public class FunnyCrawler {
  
   public static void main(String[] args) {
 	String artist_name=args[args.length()];//artist name should be at the end of string [] args
-	String search=artist_name+" live nation";//artist name is a string passed in with the artist name
+	String search=artist_name+" ticketmaster";//artist name is a string passed in with the artist name
 	FunnyCrawler obj = new FunnyCrawler();
 	Set<String> result = obj.getDataFromGoogle(search);//searching google artist name+ +live nation
 	for(String temp : result){
